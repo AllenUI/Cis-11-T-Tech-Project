@@ -1,9 +1,12 @@
 # Cis-11-T-Tech-Project
 ## Table of Contents
 * [Project Info](#ProjectInfo)
+* [Features](#Features)
 * [Technologies](#Technologies)
 * [Set Up](#SetUp)
+* [Usage](#Usage)
 * [Documentation](#Ducumentation)
+* [Code Example](CodeExample)
 * 
 ## Project Info
 This project is created for the CIS 11 assignment
