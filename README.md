@@ -7,10 +7,10 @@
 * [Project Info](#ProjectInfo)
 * [Features](#Features)
 * [Technologies](#Technologies)
-* [Installation/Set Up](#Installation/Set Up)
+* [Installation/Set Up](#Installation/SetUp)
 * [Usage](#Usage)
-* [Documentation](#Ducumentation)
-* [How to edit code](Howtoeditcode)
+* [Documentation](#Documentation)
+* [How To Edit Code](Howtoeditcode)
 
 ## Project Info
 This project is created for the CIS-11 assignment. The code is written in LC-3 and contains some advanced concepts and basic ideas. The purpose of this project is to create a grading calculator that can prompt the user for 5 test scores, validate they're within range, output a letter grade for each score, and output the min, max, and average scores for the user.
@@ -49,7 +49,7 @@ How to use the program once it's running:
 ## Documentation
 The documentation file goes indeph on how the code is constructed and other information that helps give the user an idea on what the code will be used for and who will be using it.
 
-## How to edit code
+## How To Edit Code
 If you want to make changes to the code, you will need to:
 * Launch LC3Edit.exe
 * Open .asm file containing code
