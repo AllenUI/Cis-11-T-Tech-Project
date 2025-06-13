@@ -7,8 +7,8 @@
 * [Project Info](#ProjectInfo)
 * [Features](#Features)
 * [Technologies](#Technologies)
-* [Launch](#Launch)
-* [Set Up](#SetUp)
+* [Installation/Set Up](#Installation/Set Up)
+* [Usage](#Usage)
 * [Documentation](#Ducumentation)
 * [How to edit code](Howtoeditcode)
 
