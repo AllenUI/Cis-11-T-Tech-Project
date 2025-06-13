@@ -1,4 +1,4 @@
-# Cis-11-T-Tech-Project
+# CIS-11: Team Tech's Project
 # Team Members
 * Candace Willson
 * Jeptha Peoples
