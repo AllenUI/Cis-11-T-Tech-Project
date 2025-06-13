@@ -13,33 +13,38 @@
 * [How to edit code](Howtoeditcode)
 
 ## Project Info
-This project is created for the CIS 11 assignment
-The code is written in LC-3 and contains some advanced conscepts and basic ideas
-The purpose fo this project is to create a grading calulator that can output a letter grade from lowest to highest score and assign a letter grade for the user.
+This project is created for the CIS-11 assignment. The code is written in LC-3 and contains some advanced concepts and basic ideas. The purpose of this project is to create a grading calculator that can prompt the user for 5 test scores, validate they're within range, output a letter grade for each score, and output the min, max, and average scores for the user.
 
 ## Features
-* Input test scores pf any value
-* Output test scores
-* Organize test score from least to greatest
-* Add letter grade to score
+* Input 5 test scores
+* Validates the scores within 0-100
+* Outputs a letter grade for each one
+* Outputs the min, max, and avg scores
   
 ## Technologies
-* Code was created using LC-3
+The program was created using LC-3
 * LC3Edit.exe
 * Simulate.exe
 
-## Launch
-* Find simulate.exe in instalation location
-* Open simulate.exe
-  
-## Set Up
-To run this software you need to install the LC-3 Program
-```
-Install LC-3 Software
-Open simulate.exe
-Load .asm file
-Run program with desired input
-```
+## Installation/Set Up
+* Install LC-3
+* Download the .asm file
+* Open LC3Edit.exe and assemble
+* Open simulate.exe and load in the .obj file for the program
+* Click "Run" under the "Execute" tab
+
+## Usage
+How to use the program once it's running:
+
+1.) Enter each of your 5 test scores.
+
+2.) Then, the program will check if they are valid or not.
+
+3.) If they are, it will output a letter grade for each one.
+
+4.) Once all 5 of your scores have been entered, the program automatically outputs the min, max, and average score.
+
+5.) To use the program again, close the console, reload the program, and click "Run" again.
 
 ## Documentation
 The documentation file goes indeph on how the code is constructed and other information that helps give the user an idea on what the code will be used for and who will be using it.
