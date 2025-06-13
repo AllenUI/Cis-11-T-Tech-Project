@@ -35,7 +35,7 @@ The program was created using LC-3
 
 4.) Open simulate.exe and load in the .obj file for the program
 
-5.)Click "Run" under the "Execute" tab
+5.) Click "Run" under the "Execute" tab
 
 ## Usage
 How to use the program once it's running:
