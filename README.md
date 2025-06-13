@@ -18,9 +18,9 @@ The purpose fo this project is to create a grading calulator that can output a l
 * Add letter grade to score
   
 ## Technologies
-Code was created using LC-3
-LC3Edit.exe
-Simulate.exe
+* Code was created using LC-3
+* LC3Edit.exe
+* Simulate.exe
 
 ## Set Up
 To run this software you need to install the LC-3 Program
