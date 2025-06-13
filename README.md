@@ -32,7 +32,8 @@ The purpose fo this project is to create a grading calulator that can output a l
 To run this software you need to install the LC-3 Program
 ```
 Install LC-3 Software
-Copy and paste LC-3 code into Simulate.exe
+Open simulate.exe
+Load .asm file
 Run program with desired input
 ```
 
