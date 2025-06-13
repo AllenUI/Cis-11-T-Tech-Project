@@ -1,7 +1,8 @@
 # Cis-11-T-Tech-Project
-Candace Willson
-Jeptha Peoples
-Allen Camarena
+# Team Members
+* Candace Willson
+* Jeptha Peoples
+* Allen Camarena
 ## Table of Contents
 * [Project Info](#ProjectInfo)
 * [Features](#Features)
