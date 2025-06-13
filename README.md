@@ -27,11 +27,15 @@ The program was created using LC-3
 * Simulate.exe
 
 ## Installation/Set Up
-* Install LC-3
-* Download the .asm file
-* Open LC3Edit.exe and assemble
-* Open simulate.exe and load in the .obj file for the program
-* Click "Run" under the "Execute" tab
+1.) Install LC-3
+
+2.) Download the .asm file
+
+3.) Open LC3Edit.exe and assemble
+
+4.) Open simulate.exe and load in the .obj file for the program
+
+5.)Click "Run" under the "Execute" tab
 
 ## Usage
 How to use the program once it's running:
@@ -51,8 +55,12 @@ The documentation file goes indeph on how the code is constructed and other info
 
 ## How To Edit Code
 If you want to make changes to the code, you will need to:
-* Launch LC3Edit.exe
-* Open .asm file containing code
-* Edit code
-* Assemble code and check for errors
-* Save if you need to
+1.) Launch LC3Edit.exe
+
+2.) Open .asm file containing code
+
+3.) Edit code
+
+4.) Assemble code and check for errors
+
+5.) Save if you need to
