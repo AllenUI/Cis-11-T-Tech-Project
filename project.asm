@@ -1,6 +1,12 @@
 .ORIG x3000
 
 ;~~~~~~~~~~~~~~~~~~~~MAIN PROGRAM~~~~~~~~~~~~~~~~~~~~
+; Description: Calls subroutines to create a
+;              functional assembly program
+; Inputs: N/A
+; Outputs: Max, Min, Avg printed to console
+; Registers Used: R1-R4
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 LD	R1, testNum	; Load the number of test scores to process
 LEA	R2, testArray
 LEA	R3, charArray
@@ -66,6 +72,12 @@ newline	.FILL	x000A
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ;~~~~~~~~~~~~~~~~~~PUSH SUBROUTINE~~~~~~~~~~~~~~~~~~~
+; Description: Pushes R0 onto a stack at 
+;              memory[pointer]
+; Inputs: R0 (value to push)
+; Outputs: Stack updated
+; Registers Used: R0, R1
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Push
 ST	R1, tempR
 LD	R1, pointer
@@ -77,6 +89,12 @@ RET
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ;~~~~~~~~~~~~~~~~~~~POP SUBROUTINE~~~~~~~~~~~~~~~~~~~
+; Description: Pops top value off the software stack
+;              into R0
+; Inputs: Stack contents at pointer
+; Outputs: R0 = top of stack
+; Registers Used: R0, R1
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Pop
 ST	R1, tempR
 LD	R1, pointer
@@ -88,6 +106,12 @@ RET
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ;~~~~~~~~~~~~~~~RETURNGRADE SUBROUTINE~~~~~~~~~~~~~~~
+; Description: Assigns a letter grade (A-F) based on
+;              numeric score in R1
+; Inputs: R1 = score (0-100)
+; Outputs: R1 = ASCII letter grade (A-F)
+; Registers Used: R1-R5 (also uses stack)
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ReturnGrade
 ADD	R0, R7, #0
 JSR 	Push
@@ -130,6 +154,12 @@ RET
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ;~~~~~~~~~~~~~~CONVERTASCII SUBROUTINE~~~~~~~~~~~~~~~
+; Description: Converts an ASCII string (in R3) to
+;              integer in R1
+; Inputs: R3 = address of ASCII string ending with 0
+; Outputs: R1 = numeric result
+; Registers Used: R1-R5 (also uses stack)
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ConvertAscii
 ADD	R0, R7, #0
 JSR 	Push
@@ -170,6 +200,12 @@ RET
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ;~~~~~~~~~~~~~~~CONVERTINT SUBROUTINE~~~~~~~~~~~~~~~~
+; Description: Converts integer in R1 into ASCII
+;              string at R2
+; Inputs: R1 = integer value
+; Outputs: Memory[R2] = null-terminated ASCII string
+; Registers Used: R0-R6 (also uses stack)
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ConvertInt
 ADD	R0, R7, #0
 JSR 	Push
@@ -223,6 +259,16 @@ RET
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ;~~~~~~~~~~~~~~~GETTESTSCORES SUBROUTINE~~~~~~~~~~~~~
+; Description: Prompt user for N test scores, validate,
+;              store, and print grades.
+; Inputs: R1 - number of scores
+;         R2 - address of score storage array
+;         R3 - address of buffer for string input
+;         R4 - address of prompt string
+; Outputs: testArray filled, grades printed,
+;          R1 = last score entered
+; Registers Used: R0-R6 (also uses stack)
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 GetTestScores
 ADD	R0, R7, #0
 JSR 	Push
@@ -304,7 +350,12 @@ RET
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ;~~~~~~~~~~~~~~~~~FINDMAX SUBROUTINE~~~~~~~~~~~~~~~~~
-FindMax	; Subroutine to find the maximum test score
+; Description: Finds max value in the array
+; Inputs: R1 = size, R2 = base address
+; Outputs: R1 = max value
+; Registers Used: R0-R4
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FindMax
 ADD	R0, R7, #0
 JSR 	Push
 ADD	R0, R2, #0
@@ -344,6 +395,11 @@ RET
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ;~~~~~~~~~~~~~~~~FINDMIN SUBROUTINE~~~~~~~~~~~~~~~~~~
+; Description: Finds min value in the array
+; Inputs: R1 = size, R2 = base address
+; Outputs: R1 = min value
+; Registers Used: R0-R4
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 FindMin
 ADD	R0, R7, #0
 JSR 	Push
@@ -384,7 +440,12 @@ RET
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ;~~~~~~~~~~~~~~~~FINDAVG SUBROUTINE~~~~~~~~~~~~~~~~~~
-FindAvg	; Subroutine to compute average of test scores
+; Description: Computes average from array
+; Inputs: R1 = size, R2 = base address
+; Outputs: R1 = average value
+; Registers Used: R0-R4
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FindAvg
 ADD	R0, R7, #0
 JSR 	Push
 ADD	R0, R2, #0
@@ -421,7 +482,12 @@ RET
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ;~~~~~~~~~~~~~~~~~MULT SUBROUTINE~~~~~~~~~~~~~~~~~~~~
-Mult	; Multiply two values using repeated addition
+; Description: Multiplies R1 by R2, result in R1
+; Inputs: R1, R2
+; Outputs: R1 = R1 * R2
+; Registers Used: R0, R2, R3
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mult
 ADD	R0, R7, #0
 JSR 	Push
 ADD	R0, R2, #0
@@ -447,7 +513,12 @@ RET
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ;~~~~~~~~~~~~~~~~~~DIV SUBROUTINE~~~~~~~~~~~~~~~~~~~~
-Div	; Divide R1 by R2 using repeated subtraction
+; Description: Divides R0 = R0 / R1
+;              (R0=dividend, R1=divisor)
+; Outputs: R0 = remainder, R1 = quotient
+; Registers Used: R2, R3
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Div
 ADD	R0, R7, #0
 JSR 	Push
 ADD	R0, R3, #0
