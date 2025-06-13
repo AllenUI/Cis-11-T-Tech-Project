@@ -8,8 +8,8 @@
   
 ## Project Info
 This project is created for the CIS 11 assignment
-The code is written in LC-3 and contains some advanced conscets and basic ideas
-The purpose fo this project is to create a grading calulator that can output a letter grade from lowest to highest score and assign a later grade for the user.
+The code is written in LC-3 and contains some advanced conscepts and basic ideas
+The purpose fo this project is to create a grading calulator that can output a letter grade from lowest to highest score and assign a letter grade for the user.
 
 ## Features
 * Input test scores pf any value
