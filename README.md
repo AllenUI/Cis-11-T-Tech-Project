@@ -55,6 +55,7 @@ The documentation file goes indeph on how the code is constructed and other info
 
 ## How To Edit Code
 If you want to make changes to the code, you will need to:
+
 1.) Launch LC3Edit.exe
 
 2.) Open .asm file containing code
