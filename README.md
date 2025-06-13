@@ -3,9 +3,10 @@
 * [Project Info](#ProjectInfo)
 * [Features](#Features)
 * [Technologies](#Technologies)
+* [Launch](#Launch)
 * [Set Up](#SetUp)
 * [Documentation](#Ducumentation)
-  
+
 ## Project Info
 This project is created for the CIS 11 assignment
 The code is written in LC-3 and contains some advanced conscepts and basic ideas
@@ -22,11 +23,15 @@ The purpose fo this project is to create a grading calulator that can output a l
 * LC3Edit.exe
 * Simulate.exe
 
+## Launch
+* Find simulate.exe in instalation location
+* Open simulate.exe
+  
 ## Set Up
 To run this software you need to install the LC-3 Program
 ```
 $ Install LC-3 Software
-$ Copy and paste LC-3 code
+$ Copy and paste LC-3 code into Simulate.exe
 $ Run program with desired input
 ```
 
