@@ -10,10 +10,10 @@ This project is created for the CIS 11 assignment
 The code is written in LC-3 and contains some advanced conscets and basic ideas
 The purpose fo this project is to create a grading calulator that can output a letter grade from lowest to highest score and assign a later grade for the user.
 ## Features
-*Input test scores pf any value
-*Output test scores
-*Organize test score from least to greatest
-*Add letter grade to score
+* Input test scores pf any value
+* Output test scores
+* Organize test score from least to greatest
+* Add letter grade to score
 ## Technologies
 Code was created using LC-3
 ## Set Up
