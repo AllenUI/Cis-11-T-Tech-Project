@@ -1,6 +1,6 @@
 # Cis-11-T-Tech-Project
 ## Table of Contents
-* [Project Info](#Project Info)
+* [Project Info](#ProjectInfo)
 * [Input](#Input)
 * [Output](#Output)
 * [Documentation](#Ducumentation)
